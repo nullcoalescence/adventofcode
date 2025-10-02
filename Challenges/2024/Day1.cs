@@ -6,9 +6,44 @@ namespace adventofcode.Years._2024
     {
         public void Run()
         {
-            var file = File.ReadAllLines("input/2024/day1.txt");
+            // Part 1
+            var lines = File.ReadAllLines("input/2024/day1.txt");
 
-            Console.WriteLine(file);
+            var column1 = new List<int>();
+            var column2 = new List<int>();
+
+            var seperator = "   ";
+            foreach (var line in lines)
+            {
+                column1.Add(int.Parse(line.Split(seperator)[0]));
+                column2.Add(int.Parse(line.Split(seperator)[1]));
+            }
+
+            column1 = column1
+                .OrderBy(num => num)
+                .ToList();
+
+            column2 = column2
+                .OrderBy(num => num)
+                .ToList();
+
+            var total = 0;
+            for (int i = 0; i < lines.Length; i++)
+            {
+                total += Math.Abs(column1[i] - column2[i]);
+            }
+
+            Console.WriteLine($"Total: {total}");
+
+            // Part 2
+            var similarityScore = 0;
+            foreach (int num in column1)
+            {
+                int timesOccursInSecondCol = column2.Count(n => n == num);
+                similarityScore += num * timesOccursInSecondCol;
+            }
+
+            Console.WriteLine($"Similarity score: {similarityScore}");
         }
     }
 }
