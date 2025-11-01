@@ -1,6 +1,6 @@
 ﻿namespace adventofcode.Util.Interfaces
 {
-    internal interface IDay
+    internal interface IChallenge
     {
         void Run();
     }

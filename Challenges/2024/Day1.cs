@@ -2,7 +2,7 @@
 
 namespace adventofcode.Years._2024
 {
-    internal class Day1 : IDay
+    internal class Day1 : IChallenge
     {
         public void Run()
         {
