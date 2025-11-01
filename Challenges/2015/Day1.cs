@@ -2,7 +2,7 @@ using adventofcode.Util.Interfaces;
 
 namespace adventofcode.Challenges._2015
 {
-    public class Day1 : IDay
+    public class Day1 : IChallenge
     {
         public void Run()
         {

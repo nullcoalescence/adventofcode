@@ -15,27 +15,27 @@ namespace adventofcode
             Console.Write("Day: ");
             var challengeDay = $"Day{Console.ReadLine()}";
 
-            var idayType = typeof(IDay);
+            var iChallengeType = typeof(IChallenge);
             var adventOfCodeChallenges = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
-                .Where(type => idayType.IsAssignableFrom(type)
+                .Where(type => iChallengeType.IsAssignableFrom(type)
                     && type.IsClass
                     && !type.IsAbstract);
 
-            var matchingChallenges = adventOfCodeChallenges
-                .Where(day =>
+            var matchingChallenge = adventOfCodeChallenges
+                .FirstOrDefault(day =>
                     day.Namespace!.Contains(challengeYear)
                     && day.Name.Equals(challengeDay));
 
-            if (!matchingChallenges.Any())
+            if (matchingChallenge == null)
             {
                 Console.WriteLine($"Could not find '{challengeDay}' in namespace '{challengeYear}'");
                 return;
             }
-
-            var day = (IDay)Activator.CreateInstance(matchingChallenges.First());
-            day.Run();
+            
+            var challenge = (IChallenge)Activator.CreateInstance(matchingChallenge)!;
+            challenge.Run();
         }
 
     }
