@@ -8,13 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2938cd52-9c3a-43d2-a168-7c7594d67c94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Challenges/2015/Day2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/2015/day2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Challenges/2015/Day3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/2015/day3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.adventofcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.adventofcode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenges/2015/Day1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Challenges/2015/Day1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenges/2024/Day1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Challenges/2024/Day1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util/Interfaces/IDay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Util/Interfaces/IChallenge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenges/2015/Day2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Challenges/2015/Day2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +32,18 @@
     &quot;assignee&quot;: &quot;nullcoalescence&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nullcoalescence/adventofcode",
-    "accountId": "a0c5c3a4-6069-468a-8116-9c2f31ca1c9c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nullcoalescence/adventofcode&quot;,
+    &quot;accountId&quot;: &quot;a0c5c3a4-6069-468a-8116-9c2f31ca1c9c&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2c8e7ca976f350cba9836d5565dac56b11e0b56656fa786460eb1395857a6fa/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Challenges/2015/Day1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Challenges/2015/Day2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Challenges/2015/Day3.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -59,14 +61,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "2015-day-2",
+    "git-widget-placeholder": "2015-day-3",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager">
