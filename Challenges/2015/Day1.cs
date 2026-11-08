@@ -18,7 +18,7 @@ namespace adventofcode.Challenges._2015
 
             var counter = 0;
 
-            var contents = File.ReadAllText(@"input/2015/Day1/input.txt");
+            var contents = File.ReadAllText(@"input/2015/day1.txt");
             foreach (var direction in contents.ToCharArray())
             {
                 switch (direction)
