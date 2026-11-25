@@ -60,7 +60,7 @@ namespace adventofcode
             Console.WriteLine($"Searching for challenge {challengeDate.ToString()}...");
 
             var iChallengeType = typeof(IChallenge);
-            var challenges = Assembly
+            var challenge = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
                 .Where(type =>
@@ -72,14 +72,15 @@ namespace adventofcode
                 c.Year == challengeDate.Year &&
                 c.Day == challengeDate.Day);
 
-            if (challenges == null)
+            if (challenge == null)
             {
                 Console.WriteLine("Couldn't locate challenge!");
+                return;
             }
 
-            Console.WriteLine($"Launching challenge {challengeDate.ToString()}");
+            Console.WriteLine($"Launching challenge {challenge}");
 
-            var instance = (IChallenge)Activator.CreateInstance((challenges!.GetType()))!;
+            var instance = (IChallenge)Activator.CreateInstance(challenge.GetType())!;
             instance.Run();
         }
     }
