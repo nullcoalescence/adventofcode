@@ -11,7 +11,7 @@ namespace adventofcode
             Console.WriteLine("** advent of code **");
 
             ChallengeDate challengeDate;
-            if (args != null && args.Any())
+            if (args.Any())
             {
                 challengeDate = ParseArgs(args);
             }
@@ -43,10 +43,10 @@ namespace adventofcode
         private static ChallengeDate PromptArgs()
         {
             Console.Write("Year: ");
-            var year = Console.ReadLine();
+            var year = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Day: ");
-            var day = Console.ReadLine();
+            var day = Console.ReadLine() ?? string.Empty;
 
             return new ChallengeDate
             {
@@ -71,7 +71,6 @@ namespace adventofcode
             .SingleOrDefault(c =>
                 c.Year == challengeDate.Year &&
                 c.Day == challengeDate.Day);
-                
 
             if (challenges == null)
             {

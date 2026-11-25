@@ -47,7 +47,7 @@ namespace adventofcode.Challenges._2015
                 var hlArea = Height * Length;
 
                 var surfaceArea = (2 * lwArea) + (2 * whArea) + (2 * hlArea);
-
+                
                 var smallestSide = new List<int> { lwArea, whArea, hlArea }.Min();
 
                 return surfaceArea + smallestSide;
